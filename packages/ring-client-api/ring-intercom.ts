@@ -1,7 +1,4 @@
-import {
-  IntercomHandsetAudioData,
-  PushNotification,
-} from './ring-types'
+import { IntercomHandsetAudioData } from './ring-types'
 import { commandsApi, RingRestClient } from './rest-client'
 import { BehaviorSubject, Subject } from 'rxjs'
 import { distinctUntilChanged, map } from 'rxjs/operators'
@@ -74,7 +71,7 @@ export class RingIntercom {
     })
   }
 
-  processPushNotification(notification: PushNotification) {
-  
+  processPushNotification() {
+    return this
   }
 }
