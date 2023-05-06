@@ -1,6 +1,8 @@
 import {
-  IntercomHandsetAudioData
+  IntercomHandsetAudioData,
+  PushNotification,
 } from './ring-types'
+import { commandsApi, RingRestClient } from './rest-client'
 import { BehaviorSubject, Subject } from 'rxjs'
 import { distinctUntilChanged, map } from 'rxjs/operators'
 import { getBatteryLevel } from './ring-camera'
@@ -68,5 +70,9 @@ export class RingIntercom {
         },
       },
     })
+  }
+
+  processPushNotification(notification: PushNotification) {
+  
   }
 }
