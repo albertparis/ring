@@ -13,6 +13,8 @@ export class RingIntercom {
   onData
   onRequestUpdate = new Subject()
   onBatteryLevel
+  onDing = new Subject<void>()
+  onUnlocked = new Subject<void>()
 
   constructor(
     private initialData: IntercomHandsetAudioData,
