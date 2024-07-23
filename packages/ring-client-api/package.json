@@ -31,7 +31,7 @@
     "uuid": "^9.0.0",
     "webcrypto-core": "^1.7.7",
     "werift": "0.18.2",
-    "ws": "^8.13.0"
+    "ws": "^8.17.1"
   },
   "devDependencies": {
     "@types/debug": "4.1.7",
